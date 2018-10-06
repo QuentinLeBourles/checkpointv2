@@ -18,30 +18,14 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 function seat(a,b){
-  let result = [];
-  let result2 =[];
-  for(let i =1; i<=a; i++){
-    for (let j =0; j<b; j++){
-      result.push(i)
-    }
-  }
-  for(let i =1; i<=b; i++){
-    for (let j =0; j<a; j++){
-      result2.push(i)
-    }
-  }
-}
-
-function seat(a,b){
   let row = [];
   let col =[];
   for(let i =1; i<=a; i++){
     for (let j =0; j<b; j++){
       row.push(i)
     }
-  }console.log(result)
+  }console.log(row)
   for(let i =1; i<=b; i++){
       col.push(i)
-    }console.log(result2)
-  result = result[i].concat(result2[i])
+    }console.log(col)
 }
