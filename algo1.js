@@ -20,12 +20,20 @@ Au final la liste devra ressembler à :
 function seat(a,b){
   let row = [];
   let col =[];
+  let result = [];
   for(let i =1; i<=a; i++){
-    for (let j =0; j<b; j++){
+    for (let j=0; j<b; j++){
       row.push(i)
     }
   }console.log(row)
-  for(let i =1; i<=b; i++){
+  for(let i =1; i<b; i++){
+    for (let i =1; i<=b; i++){
       col.push(i)
-    }console.log(col)
+    }}console.log(col)
+  for (let i = 0; i < col.length; i++) {
+ result.push(row[i] + "-" +col[i])};
+ console.log(result) 
+ return result
+
 }
+  seat(25,25)
